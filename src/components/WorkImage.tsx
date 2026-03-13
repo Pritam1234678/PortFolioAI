@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { MdArrowOutward } from "react-icons/md";
 
 interface Props {
   image: string;
@@ -31,11 +30,6 @@ const WorkImage = (props: Props) => {
         target="_blank"
         data-cursor={"disable"}
       >
-        {props.link && (
-          <div className="work-link">
-            <MdArrowOutward />
-          </div>
-        )}
         <img src={props.image} alt={props.alt} />
         {isVideo && <video src={video} autoPlay muted playsInline loop></video>}
       </a>
